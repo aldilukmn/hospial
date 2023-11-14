@@ -1,0 +1,28 @@
+Web server => xampp-windows-x64-7.4.33-0-VC15-installer
+
+config extension in php.ini => extension=psr and extension=phalcon
+
+phalcon => phalcon_x64_vc15_php7.4_4.1.2+5275
+
+psr => php_psr-0.7.0-7.4-ts-vc15-x64
+
+db => mysql server 8.2.0 + dbeaver 23.2.4
+
+install => 1. composer global require phalcon/devtools
+	   2. phalcon create-project be
+
+run backend => php -S localhost:8081 -t public
+run frontend => 1. npm install
+		2. npm run dev
+
+Endpoint REST API:
+
+List Pasient || GET => http://localhost:8081/api/v1/patients
+
+Get Patient || GET => http://localhost:8081/api/v1/patients/{id}
+
+Create Patient || POST => http://localhost:8081/api/v1/patients
+
+Update Patient || PATCH => http://localhost:8081/api/v1/patients/{id}
+
+Delete Patient || DELETE => http://localhost:8081/api/v1/patients/{id}

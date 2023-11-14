@@ -1,0 +1,11 @@
+<div class="page-header">
+    <h1>List of Patients</h1>
+</div>
+
+<?php foreach ($patients as $patient) { ?>
+    <p>Name: <?php echo $patient->name; ?></p>
+    <p>Sex: <?php echo $patient->sex; ?></p>
+    <p>Religion: <?php echo $patient->religion; ?></p>
+    <!-- Tambahkan properti lainnya sesuai kebutuhan -->
+    <hr>
+<?php } ?>
